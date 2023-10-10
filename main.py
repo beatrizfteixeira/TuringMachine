@@ -16,7 +16,8 @@ transicoes = [
     Transicao('q4', 'a', 'a', 'R', 'q4'),
     Transicao('q4', 'b', 'b', 'R', 'q4'),
     Transicao('q4', 'B', 'B', 'L', 'q5'),
-    Transicao('q5', 'b', 'B', 'L', 'q6'),  
+    Transicao('q5', 'b', 'B', 'L', 'q6'),
+    Transicao('q5', 'B', 'B', 'R', 'q7'),  
     Transicao('q6', 'a', 'a', 'L', 'q6'),  
     Transicao('q6', 'b', 'b', 'L', 'q6'),   
     Transicao('q6', 'B', 'B', 'R', 'q0')   
@@ -25,7 +26,7 @@ transicoes = [
 # Alfabeto da linguagem
 alfabeto = {'a', 'b', 'B'}
 # A fita sempre terminando em B
-fita = list("baabbaabB")
+fita = list("abaB")
 estado_inicial = 'q0'
 estados_aceitacao = {'q7'}
 
