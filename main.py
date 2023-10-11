@@ -25,10 +25,18 @@ transicoes = [
 
 # Alfabeto da linguagem
 alfabeto = {'a', 'b', 'B'}
-# A fita sempre terminando em B
-fita = list("abaB")
+
+fita1 = list("abaB") # Deve ser aceita
+
+fita2 = list("aabaB") # Deve ser rejeitada
+
+fita3 = list("bbbbB") # Deve ser aceita
+
+fita4 = list("aB") # Deve ser rejeitada
+
 estado_inicial = 'q0'
+
 estados_aceitacao = {'q7'}
 
-tm = TuringMachine(alfabeto, fita, estado_inicial, estados_aceitacao, transicoes)
+tm = TuringMachine(alfabeto, fita4, estado_inicial, estados_aceitacao, transicoes)
 tm.executar()

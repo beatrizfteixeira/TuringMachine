@@ -40,6 +40,7 @@ class TuringMachine:
         self.escrever_simbolo(transicao.simbolo_escrito)
         self.mover_cabeca(transicao.movimento)
         self.estado_atual = transicao.estado_novo
+        
         return True
 
     def executar(self):
